@@ -1,4 +1,4 @@
 *.o
 .vcsode/*
-
+.vscode/settings.json
 JankScript.exe
