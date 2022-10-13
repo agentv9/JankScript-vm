@@ -17,4 +17,4 @@ $(OBJDIR)%.o: %.c ${HDR}
 	${CC} ${CFLAGS} $< -o $@
 
 clean:
-	del src/*.o ${EXEC}
+ cmd /C del $(OBJ)\\*.o 
