@@ -17,4 +17,4 @@ $(OBJDIR)%.o: %.c ${HDR}
 	${CC} ${CFLAGS} $< -o $@
 
 clean:
- cmd /C del $(OBJ)\\*.o 
+	 del /s /q *.o ${EXEC}

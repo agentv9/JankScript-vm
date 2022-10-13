@@ -1,3 +1,4 @@
 *.o
-.vcsode/**
-JankScript
+.vcsode/*
+
+JankScript.exe
