@@ -5,7 +5,7 @@ SRC = ${wildcard src/*.c}
 HRD = ${wildcard include/*.h}
 OBJ = ${SRC:.c=.o}
 OBJDIR = obj
-EXEC = JankScriptVM
+EXEC = JankScript
 
 
 all: ${SRC} ${OBJ} ${EXEC}
@@ -17,4 +17,4 @@ $(OBJDIR)%.o: %.c ${HDR}
 	${CC} ${CFLAGS} $< -o $@
 
 clean:
-	rd *.o ${EXEC}
+	del src/*.o ${EXEC}
