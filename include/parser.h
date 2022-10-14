@@ -2,16 +2,18 @@
 #define JANKSCRIPT_PARSER_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#include <limits.h>
 
 #include"token.h"
 
 enum _ParserStatus {
-     SUCCESS,
-     SYNTAX_ERROR
+     PARSER_SUCCESS,
+     PARSER_SYNTAX_ERROR
 };
-typedef _ParserStatus ParserStatus;
+typedef enum _ParserStatus ParserStatus;
 
 
 ParserStatus parser_start(TokenList* list, const char* source);
